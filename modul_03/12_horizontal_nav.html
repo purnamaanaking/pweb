@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation</title>
+
+    <style>
+        ul {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        ul li {
+            background-color: #f1f1f1;
+        }
+        li a {
+            display: block;
+            color: #515151;
+            padding: 1em 2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-bottom: 5px solid #f1f1f1;
+        }
+        li a.active {
+            background-color: #44b5b5;
+            color: white;
+        }
+        li a:hover {
+            background-color: #515151;
+            color: white;
+            transition: background-color 0.3s;
+            border-bottom: 5px solid #44b5b5;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

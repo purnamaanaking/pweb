@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Purnama Anaking">
+    <meta name="keyword" content="Belajar HTML, Belajar Web">
+    <meta name="description" content="Halaman praktikum modul 1 mata kuliah pemrograman web di program studi sistem informasi">
+    <meta name="robots" content="index, follow">
+
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <h2>Form Registrasi</h2>
+    <form action="form.html" method="get">
+        <fieldset style="width: 600px;">
+            <legend>Biodata</legend>
+            <table>
+                <tr>
+                    <td>Nama Mahasiswa</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="nama_mahasiswa" size="20" placeholder="Nama Anda">
+                        <input type="hidden" name="id_mahasiswa" value="123456">
+                    </td>
+                </tr>
+                <tr>
+                    <td>No Induk Mahasiswa (NIM)</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama_mahasiswa" value="123456789" size="20" disabled></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;">Alamat Mahasiswa</td>
+                    <td style="vertical-align: top;">:</td>
+                    <td><textarea name="alamat_mahasiswa" cols="30" rows="5" placeholder="Alamat Anda"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td>
+                        <select name="tgl" id="tgl">
+                            <option value=1>01</option>
+                            <option value=2>02</option>
+                            <option value=3>03</option>
+                            <option value=4>04</option>
+                            <option value=5>05</option>
+                            <option value=6>06</option>
+                            <option value=7>07</option>
+                            <option value=8>08</option>
+                            <option value=9>09</option>
+                            <option value=10>10</option>
+                            <option value=11>11</option>
+                            <option value=12>12</option>
+                            <option value=13>13</option>
+                            <option value=14>14</option>
+                            <option value=15>15</option>
+                            <option value=16>16</option>
+                            <option value=17>17</option>
+                            <option value=18>18</option>
+                            <option value=19>19</option>
+                            <option value=20>20</option>
+                            <option value=21>21</option>
+                            <option value=22>22</option>
+                            <option value=23>23</option>
+                            <option value=24>24</option>
+                            <option value=25>25</option>
+                            <option value=26>26</option>
+                            <option value=27>27</option>
+                            <option value=27>28</option>
+                            <option value=29>29</option>
+                            <option value=30>30</option>
+                            <option value=31>31</option>
+                        </select>
+                        <select name="bln">
+                            <option value=1>Januari</option>
+                            <option value=2>Februari</option>
+                            <option value=3>Maret</option>
+                            <option value=4>April</option>
+                            <option value=5>Mei</option>
+                            <option value=6>Juni</option>
+                            <option value=7>Juli</option>
+                            <option value=8>Agustus</option>
+                            <option value=9>September</option>
+                            <option value=10>Oktober</option>
+                            <option value=11>Nopember</option>
+                            <option value=12>Desember</option>
+                        </select>
+                        <select name="thn">
+                            <option value=1>1990</option>
+                            <option value=2>1991</option>
+                            <option value=3>1992</option>
+                            <option value=4>1993</option>
+                            <option value=5>1994</option>
+                            <option value=6>1995</option>
+                            <option value=7>1996</option>
+                            <option value=8>1997</option>
+                            <option value=9>1998</option>
+                            <option value=10>1999</option>
+                            <option value=11>2000</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jenis_kelamin" value="pria" id="pria" checked><label for="pria">Pria</label>
+                        <input type="radio" name="jenis_kelamin" value="wanita" id="wanita"><label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload Foto</td>
+                    <td>:</td>
+                    <td>
+                        <input type="file" name="foto">
+                    </td>
+                </tr>
+                <tr>
+                    <td>URL Website</td>
+                    <td>:</td>
+                    <td>
+                        <input type="url" name="url_website" size="40" placeholder="URL Website Anda">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Perguruan Tinggi</td>
+                    <td>:</td>
+                    <td><input type="text" name="kampus" list="list_kampus" autocomplete="off"></td>
+                </tr>
+                <datalist id="list_kampus">
+                    <option value="Telkom University">
+                    <option value="IT Telkom Jakarta">
+                    <option value="IT Telkom Surabaya">
+                    <option value="IT Telkom Purwokerto">
+                    <option value="Institut Teknologi Surabaya">
+                    <option value="Universitas Airlangga">
+                    <option value="Universitas Brawijaya">
+                </datalist>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset style="width: 600px;">
+            <legend>Info Akun</legend>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" name="email_mahasiswa" size="20" placeholder="Email Anda"></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td>:</td>
+                    <td><input type="text" name="username_mahasiswa" size="20" placeholder="Username Anda"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type="password" name="password_mahasiswa" size="20" required placeholder="Password Anda"></td>
+                </tr>
+                <tr>
+                    <td>Ulangi Password</td>
+                    <td>:</td>
+                    <td><input type="password" name="ulangi_password_mahasiswa" size="20" required placeholder="Password Anda"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset style="width: 600px;">
+            <legend>Kemampuan Dasar</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="html" value="html" id="html"><label for="html">HTML</label>
+                        <input type="checkbox" name="css" value="css" id="css"><label for="css">CSS</label>
+                        <input type="checkbox" name="javascript" value="javascript" id="javascript"><label for="javascript">Javascript</label>
+                        <input type="checkbox" name="php" value="php" id="php"><label for="php">PHP</label>
+                        <input type="checkbox" name="php" value="php" id="mysql"><label for="mysql">MySQL</label>
+                        <input type="checkbox" name="php" value="php" id="laravel"><label for="laravel">Laravel</label>
+                        <input type="checkbox" name="php" value="php" id="react_native"><label for="react_native">React Native</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Simpan">
+            <input type="button" value="Button" onclick="">
+        </div>
+    </form>
+</body>
+</html>
