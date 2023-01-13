@@ -1,0 +1,1 @@
+alert('Ini dari Eksternal Script');
