@@ -10,6 +10,3 @@
 - Modul 07: Pengenalan PHP Tingkat Dasar
 - Modul 08: Pengenalan PHP Tingkat Lanjut
 - Modul 09: Object Oriented Programming (OOP) pada PHP
-
-## Bahan Ajar
-- https://drive.google.com/drive/folders/16PuhfWnjUgDETO0fSyqJJFPRrMlrO4rX?usp=share_link
